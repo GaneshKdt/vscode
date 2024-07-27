@@ -1,0 +1,12 @@
+.card-header-feed-cards
+{
+    background-color:white;
+    border-bottom:white;
+}
+.cursor{
+    cursor: pointer;
+    color: #007bff;
+}
+.dropdown-menu.show{
+    left: -104px!important;
+}

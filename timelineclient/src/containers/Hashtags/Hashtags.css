@@ -1,0 +1,9 @@
+.tags{
+    color: #385898;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+.tagsDiv{
+    margin-bottom:10px;
+}

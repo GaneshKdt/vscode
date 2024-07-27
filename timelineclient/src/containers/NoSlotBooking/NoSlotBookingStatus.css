@@ -1,0 +1,27 @@
+.alert-text {
+    padding-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+.status-body {
+    padding: 1em 1.2em 0.8em;
+}
+.status-title {
+    margin-bottom: 1.2em;
+}
+.status-text {
+    margin-left: 2.5em;
+    margin-bottom: 0.8em;
+}
+.text-heading {
+    font-weight: 500;
+}
+.text-row {
+    margin-bottom: 0.6em;
+}
+.status-button {
+    margin-left: 0.5em;
+}
+.button-link {
+    margin-left: auto;
+    margin-right: 0.6rem;
+}

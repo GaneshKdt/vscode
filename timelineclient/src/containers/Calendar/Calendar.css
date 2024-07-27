@@ -1,0 +1,18 @@
+.fc-content{
+    color: white !important;
+}
+.fc-dayGridMonth-view .fc-time:after { content: "m"; }
+
+.fc-axis.fc-time:after { content: " "; }
+
+.fc-dayGridMonth-button{
+    text-transform:  capitalize;
+}
+.fc-timeGridWeek-button{
+    text-transform:  capitalize;
+
+}
+.fc-timeGridDay-button{
+    text-transform:  capitalize;
+
+}

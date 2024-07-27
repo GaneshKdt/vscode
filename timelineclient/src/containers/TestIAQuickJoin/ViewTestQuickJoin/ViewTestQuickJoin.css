@@ -1,0 +1,46 @@
+
+.h_iframe iframe {
+    width:100%;
+    height:100%;
+	overflow:scroll; 
+}
+.h_iframe {
+    height: 100%;
+    width:100%;
+}
+
+ .h_iframe::-webkit-scrollbar {
+    width: 12px;
+}
+ .h_iframe::-webkit-scrollbar-thumb{
+    background-color:#d2232a;
+    border-radius:15px;
+}
+
+
+.h_iframe {
+    height: calc(100vh - 200px);
+}
+
+
+body.hideSidebar.hideHeader .h_iframe iframe {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 999999;
+    height: 100%;
+}
+
+body.hideSidebar.hideHeader:not(.mck-box-open) .h_iframe iframe {
+    right: 0px;
+    width: 100%;
+}
+
+body.hideSidebar.hideHeader.mck-box-open .h_iframe iframe {
+    right: 310px;
+    width: calc(100% - 315px);
+}

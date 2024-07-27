@@ -1,0 +1,37 @@
+
+.bg {
+    background-image: url("../assets/images/cover/background2.png");
+    height: 233px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.noMargin , p{
+    margin-left: 0%;
+}
+h6{
+    margin-top:2%;
+}
+.pro_pic{
+    width: 125px;
+    margin-top: 108px;
+}
+.instructor-name{
+    margin-top: 187px;
+    width: max-content;
+    margin-left: 19px;
+}
+.timeline{
+    width: 63%;
+    display:inline-block;
+    text-align: left;
+}
+.instructor-tab{
+    margin: 0.2%
+}
+.instructor-container{
+    height: auto;
+}
+.timeline-tab{
+    text-align: center;
+}

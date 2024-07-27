@@ -1,0 +1,28 @@
+.card-header-tile {
+    font-size: 0.9rem;
+}
+.card-tile {
+    margin: 0.50rem 0.75rem 0rem;
+}
+.card-body-tile {
+    margin: 0.6em 1.5em;
+}
+.card-title-tile {
+    margin-left: auto;
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+}
+.card-text-tile {
+    font-size: 0.9rem;
+}
+.card-icon {
+    width: 0.75em !important;
+    height: 0.75em !important;
+    margin-bottom: 0.15em;
+}
+.detail-row {
+    margin-bottom: 0.8em;
+}
+.card-button-tile {
+    font-size: 0.9rem;
+}

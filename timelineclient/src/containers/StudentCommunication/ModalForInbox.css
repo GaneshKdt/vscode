@@ -1,0 +1,28 @@
+.modal-dialog {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    
+}
+.modal-body{
+    max-height: calc(100vh - 230px); 
+    overflow-Y: auto;
+}
+
+.headerForInbox{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.styleForHover:hover{
+    background-color: inherit;
+}
+
+.inboxTextUnderHeader{
+    margin-top: 7px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}

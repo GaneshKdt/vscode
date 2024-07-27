@@ -1,0 +1,52 @@
+/* .ViewMore{
+	color: #ddd;
+    font-size: 14px;;
+    top: 12px;
+    left: 10px;
+    overflow-wrap: break-word;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-shadow: 0 0 0.5em #000;
+    vertical-align: middle;
+}
+
+.profileNamepic{
+	margin: -180px 0px 0px 10px;
+    position: absolute;
+    z-index: 0;
+    height: 200px;
+    width: 200px;
+} */
+
+.forCard{
+    margin: 1%;
+    /* padding: 2%; */
+    /* width: 75%;
+    text-align: center; */
+}
+
+.forForm{
+    padding: 2%;
+    margin-left: 8%;
+}
+.forButtons{
+    text-align: center;
+}
+.mandatory{
+    color: red;
+}
+.forPanel{
+    padding: 2%;
+    margin-left: -1%;
+    margin-right: 9%;
+}
+.disabledField{
+    background-color: lightgrey !important;
+}
+.enabledFields{
+    background-color: lightblue;
+}
+.btn-outline-secondary:hover {
+    color: white !important;
+}

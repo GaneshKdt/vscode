@@ -1,0 +1,75 @@
+.cursorPointer{
+    cursor: pointer
+}
+
+.reply-caret {
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    width: 10px;
+    color:rgb(195, 195, 195);
+    font-size:15px;
+    font-weight:5px;
+    /* background: url(//a.edim.co/images_v2/sprites/sprite-site-v2.png) 1px -1340px no-repeat; */
+    
+    padding-right: 30px;
+}
+.commentAction{
+    float: right;
+    width: 1px!important;
+}
+
+.viewReply{
+    height: 15px;
+    width: 10px;
+    color: #848484;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.reactionsBadge{
+    /* background-color: #8c8f9421;
+    width: 52px;
+    height: 25px;
+    color: #777676;
+    border-radius: 11px;
+    font-size: 16px!important;
+    font-weight: 600;
+    display: flex;
+    float: right; 
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: baseline;
+    align-items: center; */
+    margin-top: 10px;
+    padding: 4px 1px 2px 7px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    color: #777676;
+    font-size: 14px!important;
+    font-weight: normal;
+    width: 55px;
+    height: 25px;
+    display: flex;
+    float: right; 
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: baseline;
+    align-items: center;
+    justify-content: flex-end;
+    display: inline-block;
+}
+.profile_pic{
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.19);
+}
+.noPaddingLeft{
+    padding-left: 0px;
+}
+.noPaddingRight{
+    padding-right: 0px;
+}
+.comment-word-break{
+    word-break: break-all;
+    justify-content: space-between;
+}

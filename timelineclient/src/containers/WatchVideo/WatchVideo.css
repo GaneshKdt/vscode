@@ -1,0 +1,75 @@
+.post-comment-input{
+    border-top: none; 
+    border-left: none;
+     border-right: none;
+     background-color: transparent;
+}
+
+#subTopics_Id{
+    background-color: rgb(192, 232, 249);
+}
+
+.loadingSpinnerChildForSubTopics{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+#subTopicsTitle_Id{
+    font-weight: 550;  
+    color: #1b7195;
+}
+#subTopics_container{
+    scroll-behavior: smooth;
+
+}
+#autoScrollBtn{
+    color: rgb(255, 255, 255);
+    bottom: 0px;
+    border-radius: 3px 3px 0 0;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.searchSubTopicsSpan{
+    line-height: 20px
+}

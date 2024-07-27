@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+<meta charset="ISO-8859-1">
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" 
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+	verifyUserExists('nomita')
+	
+	function verifyUserExists(userId) {
+		
+		$.ajax({
+			type:"POST",
+			url: "https://apps.applozic.com/rest/ws/user/v2/detail",
+			data : JSON.stringify({
+				'userIdList' : [userId]
+			}),
+			contentType:'application/json',
+			headers: {
+		        'Authorization' : 'Basic ' + btoa('verification_bot:Newuser@123'),
+		        'Application-Key' : '3188af863b45ee48f80292c154e498a5f',
+		        'Content-Type' : 'application/json'
+		    },
+			success	:	function(data){
+				console.log(data)
+				if(data.status == "success") {
+					if(data.response.length > 0) {
+						signInToApplozic(userId)
+					}
+				}
+			},
+			error: function() {   
+				
+			}
+		})
+		
+	}
+	
+	function signInToApplozic(userId) {
+
+	   (
+		function(d, m){
+			var s, h;       
+			s = document.createElement("script");
+			s.type = "text/javascript";
+			s.async=true;
+			s.src="https://apps.applozic.com/sidebox.app";
+			h=document.getElementsByTagName('head')[0];
+			h.appendChild(s);
+			window.applozic=m;
+			m.init=function(t){m._globals=t;}}
+	   )(
+			document, window.applozic || {}
+	   );
+		   
+		window.applozic.init({
+			userId: userId, 
+			accessToken: userId, 
+			appId: '3188af863b45ee48f80292c154e498a5f',
+			desktopNotification: true,
+			notificationIconLink: "https://www.applozic.com/resources/images/applozic_icon.png",
+			locShare: true,
+			googleApiKey: "AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4",
+			autoTypeSearchEnabled : false,	// set to false if you don't want to allow sending message to user who is not in the contact list
+			loadOwnContacts : true, //set to true if you want to populate your own contact list (see Step 4 for reference)
+			olStatus: true,		//set to true for displaying a green dot in chat screen for users who are online
+			onInit : function(response,data) {
+				if (response === "success") {
+					
+					/*
+					 * login successful, perform your actions if any, for example: load contacts, getting unread message count, etc
+					 * calling function load contacts
+					 */
+					 
+					$.ajax({
+						type:"POST",
+						url: "/chats/m/getContactForChat",
+						data : JSON.stringify({
+							'userId' : userId
+						}),
+						contentType:'application/json',
+						success	: function(data){
+							console.log("loading contacts")
+							var contacts = []
+							data.forEach((contact) => {
+								let newContact = {
+									userId: contact.sapId, 
+									displayName: contact.firstName + " " + contact.lastName +" ( "+  contact.sapId +", "+
+											contact.program+", "+contact.batch+", "+contact.subject+" )",
+									imageLink: contact.imageUrl,
+								}
+						
+								if(userId != newContact.userId){
+									contacts.push(newContact)
+								}
+							})
+							
+							console.debug("applozic: "+JSON.stringify($applozic.applozic))
+							$applozic.fn.applozic('loadContacts', {"contacts":contacts});
+						},
+						error: function( err ) {
+							// error in fetching contacts 
+						}
+					})
+					
+					
+				} else {
+					// error in user login/register (you can hide chat button or refresh page)
+				}
+			},	
+			
+		});
+	}
+</script>
+
+</body>
+</html>

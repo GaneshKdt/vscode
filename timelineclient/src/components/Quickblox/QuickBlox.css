@@ -1,0 +1,59 @@
+/* .quickblox-chat-box{
+    position: fixed;
+	height: 94%;
+	right: 0;
+    margin: 0;
+	border: 0;
+	padding-left: 0px;
+	z-index: 2243500;
+	box-shadow: none;
+	border-radius: 0;
+    top:5em;
+}
+
+.quickblox-iFrame{
+    height:95%;
+    border:0;
+    width:100%
+}
+
+.quickblox-chat-icon{
+	background: #007bff;
+	color:#fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 1em;
+    float: right;
+    padding: 1em;
+    margin-right: 2em; 
+    position: fixed;
+    right: 0;
+    bottom: 2em;
+}
+
+.close-chat{
+	/* background: #3978FC; */
+    /* color: #3978FC;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    float: right;
+    margin-right: 2em;
+    margin-top: 2em;
+	position: fixed;
+    z-index: 2500000;
+	top: 1.62em;
+    right: 0;
+    padding: 0px;
+    margin-right: 0px;
+    height: 1.233em;
+}
+
+@media(min-width:768px) and (max-width:1024px)
+{
+    .quickblox-chat-icon
+    {
+        margin-right: 1em;
+    }
+}  */

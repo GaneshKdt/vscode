@@ -1,0 +1,10 @@
+.notificationLinkClass{
+    font-weight: bold;
+}
+#announcementLink{
+    /* color: royalblue !important; */
+    font-size: 15px;
+}
+.announcementInfo{
+    font-size: 12px;
+}

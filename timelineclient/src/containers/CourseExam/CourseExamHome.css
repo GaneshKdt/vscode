@@ -1,0 +1,58 @@
+.course-text-orange{
+   color: #ff9900; 
+}
+.course-text-red{
+   color: red; 
+}
+.course-text-blue{
+   color: #0072ff; 
+}
+.course-text-green{
+   color: #01b901; 
+}
+.course-text-purple{
+   color: purple; 
+}
+.course-text-pink{
+   color: #ff2d52; 
+}
+.react-bootstrap-table{
+   overflow: auto;
+}
+.marginRightForChatExam{
+   margin-right: 1% !important;
+}
+#grade-book .react-bootstrap-table table {
+   table-layout: auto !important;
+}
+
+#grade-book #semester-overview-table tr > td:not(.reset-expansion-style) {
+   cursor: pointer;
+}
+
+#grade-book table td {
+   vertical-align: middle;
+}
+
+#grade-book .search-box:focus {    
+   border-color: #80bdff;
+   outline: 0;
+   box-shadow: unset;
+}
+
+#grade-book .search-box {
+   height: calc(1.5em + 0.75rem + 2px)
+}
+
+
+#grade-book #marksheet-table th:not(:first-child) {
+   width: 30%;
+}
+/* 
+#grade-book .react-bootstrap-table {
+   text-align: left;
+}
+
+#grade-book .react-bootstrap-table th {
+   text-align: center;
+} */

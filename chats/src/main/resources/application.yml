@@ -1,0 +1,56 @@
+eureka:
+  client:
+    fetch-registry: true
+    fetchRegistry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_DEFAULTZONE}
+  instance:
+    healthCheckUrlPath: /chats/health
+    leaseExpirationDurationInSeconds: 2
+    leaseRenewalIntervalInSeconds: 1
+    statusPageUrlPath: /chats/info
+
+logging:
+  level:
+    root: INFO
+    '[org.springframework.web]': INFO
+    '[org.hibernate]': INFO
+
+server:
+  servlet:
+    contextPath: /chats
+    
+spring:
+  application:
+    name: chat-service
+  cache:
+    type: redis
+  datasource:
+    driver-class-name: ${mysql.datasource.driver-class-name}
+    password: ${mysql.datasource.password}
+    url: ${mysql.datasource.url}/lti?useSSL=false
+    username: ${mysql.datasource.username}
+  jmx:
+    default-domain: chat-service
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: true
+    properties:
+      hibernate:
+        '[format_sql]': true
+        type: 'trace'
+        '[use_sql_comments]': true
+#        '[show_sql]': true
+  profiles:
+    active: prod
+  redis:
+    host: localhost
+    port: 6379
+  thymeleaf:
+    reactive:
+      max-chunk-size: '8192'

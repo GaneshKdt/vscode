@@ -1,0 +1,7 @@
+.toggleHeader{
+    background-color: grey;
+    color: white;
+}
+.toggleHeader:hover {
+    cursor: pointer;
+}

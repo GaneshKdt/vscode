@@ -1,0 +1,77 @@
+.marginForTabs{
+    margin-right: 5%;
+    padding: 0%;
+}
+.rowOdd{
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* background: antiquewhite; */
+    border-bottom: 1px solid;
+    vertical-align: middle;
+    font-size: small;
+    
+}
+.rowEven{
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* background: white; */
+    border-bottom: 1px solid;
+    vertical-align: middle;
+    font-size: small;
+    
+}
+.announcements{
+    font-weight: bold;
+}
+.header{
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    padding: inherit;
+}
+.tabCss{
+    color: maroon !important;
+    font-weight: bold;
+}
+.marginForNotiIcon{
+    margin-left: 95%;
+    margin-top: -2.5%;
+}
+.announcementsCol{
+    font-weight: bold;
+    /* text-align: left; */
+    padding: inherit;
+}
+
+.notificationHeader{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.notiTextUnderHeader{
+    /* margin-left: 7px; */
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 10px;
+}
+.styleForHover {
+    background-color: white;
+}
+.styleForHover:hover {
+    background-color: inherit;
+}
+.scrollForAnnouncement{
+    max-height: calc(100vh - 210px);
+    overflow-y: auto
+}
+.scrollForAnnouncementModal{
+    max-height: calc(100vh - 240px);
+    overflow-y: auto
+}
+.marginRightForChatNoti{
+    margin-right: 4% !important;
+ }

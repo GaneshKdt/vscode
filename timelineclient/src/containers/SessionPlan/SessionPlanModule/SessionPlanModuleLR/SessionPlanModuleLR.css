@@ -1,0 +1,20 @@
+.fixedHeightForContentCardBody{
+    min-height: 120px;
+}
+.no-border{
+    border: none
+}
+.session-plan-lr th{
+    
+    border-bottom: none!important;
+}
+.session-plan-lr thead tr th{
+    border-top: none!important;
+}
+.session-plan-lr tbody tr{
+    border-top: 1px solid #dee2e6!important;
+}
+.session-plan-lr td{
+    vertical-align: middle!important;
+    padding: 5px!important;
+}

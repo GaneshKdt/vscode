@@ -1,0 +1,255 @@
+/* #top-header{                               //Commented to apply fade backdrop to the entire screen
+  z-index: 22440000 !important;
+} */
+.headerIcon{
+  font-size: 11px;
+}
+
+.navbar-icon-top{
+  background-color: #ECE9E7;
+  border-bottom: 1px solid #CCCCCC;
+  
+  box-shadow: 0px 0px 0px -1px rgba(0,0,0,0.2), 0px 0px 5px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa,  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa {
+  position: relative;
+  width: 36px;
+  font-size: 20px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge,  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa , .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa {
+  top: 3px;
+  line-height: 12px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge , .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa > .badge {
+  top: -10px;
+}
+
+a.dropdown-toggle::after {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+    top: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+    min-width: 80px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa > .badge{
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa {
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge, .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link  .nav-icon-container > .fa > .badge{
+    top: -7px;
+  }
+}
+
+.notificationBadge{
+  margin-top: -85%;
+  margin-left: 25%;
+}
+.badge{
+  font-size: 0.55rem !important
+}
+
+.headerNav{
+  text-align: center;
+  color: grey !important;
+  margin-right: 5%;
+}
+.searchbar .dropdown-menu {
+  margin-top: -6px!important;
+  padding:2px;
+  width:15rem;
+  margin-left: 52px
+}
+
+
+
+.navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+    min-width: 80px;
+}
+
+@media( min-width: 576px ){
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+        text-align: center;
+        display: table-cell;
+        height: auto;
+        vertical-align: middle;
+        margin: 0px;
+        padding: 8px 0px 8px 0px;
+        min-width: 80px;
+    }
+    
+    .navbar-nav {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media( max-width: 576px ){
+    .navbar-nav > #collasible-nav-dropdown, .navbar-nav > .nav-link{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* Additional media queries,etc for navbar to make it look better in view sizes < md */
+
+.navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+  text-align: center;
+  display: table-cell;
+  height: auto;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 8px 0px 8px 0px;
+  min-width: 80px;
+}
+
+@media( min-width: 576px ){
+  
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    /* All nav items appear in a second line in sm-md */
+      text-align: center;
+      display: table-cell;
+      height: auto;
+      vertical-align: middle;
+      margin: 0px;
+      padding: 8px 0px 8px 0px;
+      min-width: 80px;
+  }
+  
+  .navbar-nav {
+      -webkit-flex-direction: row;
+      flex-direction: row;
+  }
+}
+
+/* Show a ^ icon on the top of dropdown(helps know which side the dropdown is from) */
+nav .dropdown-menu:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 12px;
+  border: 10px solid #ffffff;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+
+@media( max-width: 576px ){
+  /* All items appear seperate/vertically in one line each in very small(xs) */
+  .navbar-nav > #collasible-nav-dropdown, .navbar-nav > .nav-link{
+      margin-left: auto !important;
+      margin-right: auto !important;
+  }
+}
+
+/* End */
+
+@media( max-width: 992px ){
+  #sidebar-toggle {
+      display: block;
+  }
+}
+.settings-arrow{
+  padding-top: 13px;
+}
+
+.dropdow-size.dropdown-menu-right{
+  right: auto;
+}

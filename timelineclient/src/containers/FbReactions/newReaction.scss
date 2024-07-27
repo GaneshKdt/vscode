@@ -1,0 +1,165 @@
+$reaction-list: like, celebrate, love, insightful, curious;
+$reaction-size: 40;
+
+  .like-btn {
+
+//copied frm fb reactions
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    transition: all 20ms ease-out;
+    vertical-align: top;
+    background: url() center left no-repeat;
+    background-position: left 10px top 2px;
+    font-size: 14px;
+    color:gray;
+    padding: 6px 0px 0px;
+  
+//copied frm fb reactions end
+
+    cursor: pointer;
+  
+
+    &::before {
+      content: "."; opacity: 0;
+      display: block;
+      width: 44px; height: 10px;
+      position: absolute; 
+      top: -10px; left: 0;
+    }
+    
+    .reaction-box {
+      position: absolute;
+      width: 250px; height: 55px;
+      background: #FFF;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 28px;
+      left: 0px; bottom: 35px; 
+      display: none;
+      
+      @for $i from 1 through length($reaction-list) {
+        $reaction: nth($reaction-list, $i);
+        .reaction-icon.#{$reaction} {
+          animation: fadeInLoad-#{$reaction} 0.3s;
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+          background-position: 0px ($reaction-size * ($i - 1) * -1px);
+        }
+      }
+      .like{
+        background:url(../Home/Assets/like.png);
+      } 
+      .celebrate{
+        background:url(../Home/Assets/clap.png);
+      }
+      .love{
+        background:url(../Home/Assets/love.png);
+      }
+      .insightful{
+        background:url(../Home/Assets/insightful.png);
+      }
+      .curious{
+        background:url(../Home/Assets/curious.png);
+      } 
+      .reaction-icon {
+        display: inline-block;
+        width: $reaction-size * 1px; height: $reaction-size * 1px;
+        
+        background-size: cover;
+        border-radius: 20px;
+        margin: 8px -1px 0 8px;
+        text-align: center;
+        // Animation
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0;
+        transform: translate(0, 100px) scale(0);
+        label {
+          padding: 3px 5px 3px 5px;
+          position: relative;
+          top: -24px;
+          border-radius: 10px;
+          font-size: 11px;
+          color: #FFF;
+          background: #333;
+          visibility: hidden;
+        }
+      }
+      
+    }
+    
+    .reaction-box {
+   
+        .reaction-icon {
+          
+          &.show {
+            opacity: 1;
+            transform: translate(0, 0) scale(1);
+            pointer-events: auto;
+          }
+          
+          &:hover {
+            transform: scale(1.4);
+            transform-origin: bottom;
+
+            label {
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+    
+  }
+
+  .reactionButton.like{
+    background:url(../Home/Assets/like.png) no-repeat;;
+    background-size: contain;
+    background-position-x: right;
+  }
+  .reactionButton.celebrate{
+    background:url(../Home/Assets/clap.png) no-repeat;;
+    background-size: contain;
+    background-position-x: right;
+  }
+  .reactionButton.love{
+    background:url(../Home/Assets/love.png) no-repeat;;
+    background-size: contain;
+    background-position-x: right;
+  }
+  .reactionButton.insightful{
+    background:url(../Home/Assets/insightful.png) no-repeat;;
+    background-size: contain;
+    background-position-x: right;
+  }
+  .reactionButton.curious{
+    background:url(../Home/Assets/curious.png) no-repeat;;
+    background-size: contain;
+    background-position-x: right;
+  }
+  .reactionButton{
+    width: 15px;
+    height: 22px;
+    padding-right: 8px;
+    border-radius: 20px;
+  }
+.emojiName{
+  font-size: 13px;
+  padding: 2px;
+  text-align: left;
+}
+
+.reaction-count-emoji{
+  background: #fff;
+  border-radius: 10px;
+  border-right: 2px solid #fff;
+  margin-left: -8px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  height: 18px !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.29); 
+  display: inline-block;
+}
+  
+  
+

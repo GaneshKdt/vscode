@@ -1,0 +1,102 @@
+.red {
+    color: #d2232a;
+}
+.panel-content-wrapper {
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.sz-content-wrapper .sz-content {
+    padding: 80px 15px 0 15px;
+}
+.sz-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+button{
+    margin: 3px;
+}
+/* Causes problems everywhere col-md-8 is used */
+/* .col-md-8{
+    margin-left: 12%;
+} */
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.App {
+    text-align: left;
+}
+p{
+    margin-left: 6%;
+}
+.forButtons{
+    text-align: center;
+}
+.forFormInSR{
+    padding: 5%;
+    margin-left: 0%;
+}
+.cardHeader{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+.fileInput{
+    margin-top: 2%;
+}
+.charges{
+    color : red;
+}
+.form-check-input {
+    margin-top: 0.12rem !important;
+}
+
+.formContainer{
+background-color:"white" 
+}

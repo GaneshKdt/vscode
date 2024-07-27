@@ -1,0 +1,88 @@
+#grade-book .row-expansion-style {
+    background: white;
+}
+#grade-book .subject-result {
+    border: 0px;
+    border-bottom: 2px solid ;
+    padding-bottom: 2px ;
+    border-radius: 0px ;
+
+    -webkit-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.18);
+    -moz-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.18);
+    box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.18);
+    
+    font-family: sans-serif;
+}
+#grade-book .subject-result .subject-result-assessment-name {
+    height: 70px;
+    text-align: start;
+}
+#grade-book .subject-result .subject-result-marks {
+    height: 100px;
+}
+#grade-book .subject-result .subject-score{
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+#grade-book .subject-result .subject-score-seperator{
+    font-weight: 300;
+    font-size: 2.1rem;
+}
+
+#grade-book .subject-result .subject-result-date {
+    /* height: 25px; */
+}
+
+#grade-book .subject-result.counted {
+    border-color: #01b901;
+}
+
+#grade-book .subject-result.not-counted {
+    border-color: red;
+}
+
+
+#grade-book .assessment-col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@media (min-width: 1200px) {
+    #grade-book .assessment-col {
+        width: 20%;
+        float: left;
+    }
+    
+    .mck-box-open #grade-book .assessment-col {
+        width: 25%;
+        float: left;
+    }
+    
+}
+
+@media ( max-width: 1200px ) {
+    
+    @media (max-width: 992px) {
+        #grade-book .assessment-col {
+            width: 33%;
+            float: left;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        #grade-book .assessment-col {
+            width: 25%;
+            float: left;
+        }
+    }
+}
+
+#grade-book .react-bootstrap-table th .caret-4-asc:after,
+#grade-book .react-bootstrap-table th .caret-4-desc:before,
+#grade-book .react-bootstrap-table th .order-4:before,
+#grade-book .react-bootstrap-table th .order-4:after {
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.5);
+}

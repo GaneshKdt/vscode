@@ -1,0 +1,78 @@
+.testTextUnderHeader{
+    margin-left: 7px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.iconForDueTest{
+    width: 13px !important;
+    height: 13px !important;
+    background-size: cover;
+    margin-bottom: 3px;
+}
+.class-color-icon-todo {
+    line-height: 16px;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+.verticalLineForTestCard{
+    flex-shrink: 0;
+    width: 1px;
+    background-color: #aeaeae;
+    height: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.progress-wrapper-todo {
+    height: 24px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+.progress-value-todo {
+    color: #333;
+    line-height: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.total-value-todo {
+    color: #666;
+    line-height: 12px;
+    font-size: 11px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.takeTestIcon{
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0px !important;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+}
+.pendingProjReg-card-block {
+    margin: 0.6rem 0.75rem;
+}
+.pendingProjReg-card-body {
+    padding: 0.5em;
+}
+.pendingProjReg-card-title {
+    margin-left: 0.5em;
+    margin-bottom: 0.25em;
+    font-size: 1rem;
+}
+.pendingProjReg-card-body-text{
+    margin-left: 4.6em;
+    color: #666;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: initial;
+}
+.pendingProjReg-card-button {
+    margin-right: 1.45em;
+}

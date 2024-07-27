@@ -1,0 +1,76 @@
+.cancelBtn{
+    color: #007bff!important;
+    margin-right:5px;
+}
+.profile_pic{
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mentions-input > div > textarea {
+    
+    background-image: none;
+    border: 1px solid #f9f9f9 !important;
+    
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    
+    padding: 5px 15px;    
+    font-size: inherit !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #495057 !important;
+    display: block !important;
+    width: 100% !important;
+    background-clip: padding-box;
+  }
+  .mentions-input > div > textarea:focus {
+    color: #495057;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+
+  .form-control__suggestions {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    top:15px !important;
+  }
+  .form-control__suggestions__list{
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+  .form-control__suggestions__item {
+    padding: 5px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    
+  }
+  
+  .form-control__suggestions__item--focused {
+    
+    background-color: #0090fff7;
+    color:#fff;
+    
+  }
+  
+  .form-control__mention {
+    position: relative;
+    z-index: 1;
+    color: blue;
+    text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white,
+      -1px -1px 1px white;
+    text-decoration: underline;
+    pointer-events: none;
+  }
+
+  .mentions-input   ::-webkit-scrollbar,
+.mentions-input ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+  color:#c1c1c1;
+}
+
+.mentions-input ::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}

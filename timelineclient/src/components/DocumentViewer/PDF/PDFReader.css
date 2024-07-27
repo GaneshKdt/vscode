@@ -1,0 +1,10 @@
+.PDFContent Canvas {
+    margin-left: auto;
+    margin-right: auto;
+}
+.PDFContent .react-pdf__Page {
+    background-color: black !important;
+}
+.PDFContent .react-pdf__Page__textContent {
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+
+.bg {
+    background-image: url("../assets/images/cover/background2.png");
+    height: 233px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.noMargin , p{
+    margin-left: 0%;
+}
+h6{
+    margin-top:2%;
+}
+.pro_pic{
+    margin-top: 84px;
+    border-radius: 8px;
+    width: 140px;
+    height: 140px;
+}
+.student-name{
+    width: max-content;
+    margin-left: 19px; 
+}
+.timeline{
+    width: 63%;
+    display:inline-block;
+    text-align: left;
+}
+.instructor-tab{
+    margin: 0.2%;
+    margin-bottom: 50px;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+    text-align: start;
+}
+.instructor-container{
+    height: auto;
+}
+.timeline-tab{
+    text-align: center;
+}
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+

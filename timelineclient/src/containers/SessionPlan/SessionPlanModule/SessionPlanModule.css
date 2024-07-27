@@ -1,0 +1,179 @@
+#session-plan-module-home .controlsBlock {
+  position: relative;
+  top: 0px;
+  z-index: 1;
+  text-align: center;
+}
+
+#session-plan-module-home .controls {
+  position: relative;
+  display: block;
+}
+
+#session-plan-module-home .breadCrumbIcon {
+  font-size: 17px !important;
+}
+
+#session-plan-module-home .sessionplan-container-bg {
+  /* background-color: #ece9e7; */
+  margin-top: 2rem;
+}
+
+
+/* for tabs */
+
+
+/* Tabs panel */
+#session-plan-module-home .tabbable-panel {
+  border: 1px solid #eee;
+  /* padding: 10px; */
+  /* padding-top: 0px!important;  */
+  background: white;
+}
+
+/* Default mode */
+#session-plan-module-home .tabbable-line>.nav-tabs {
+  border: none;
+  margin: 0px;
+  display: flex;
+  text-align: center;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a {
+  /* margin-right: 2px; */
+  flex: auto;
+  color: #737373;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a>div {
+  border: 0;
+  margin-right: 0;
+  /* padding-right: 4rem;
+   padding-left: 4rem;   */
+  color: #737373;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a>div>i {
+  color: #a6a6a6;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.open,
+.tabbable-line>.nav-tabs>a:hover {
+  border-bottom: 4px solid #4099ff82;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.open>div,
+.tabbable-line>.nav-tabs>a:hover>div {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.open>div>i,
+.tabbable-line>.nav-tabs>a:hover>div>i {
+  color: #a6a6a6;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.open .dropdown-menu,
+.tabbable-line>.nav-tabs>a:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.active {
+  border-bottom: 4px solid #4099ff;
+  position: relative;
+  font-weight: 500;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.active>div {
+  border: 0;
+  color: black;
+}
+
+#session-plan-module-home .tabbable-line>.nav-tabs>a.active>div>i {
+  color: black;
+  font-size: 30px;
+}
+
+#session-plan-module-home .tabbable-line>.tab-content {
+  margin-top: -3px;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+  min-height: 43rem;
+}
+
+#session-plan-module-home .material-icons {
+  font-size: 28px;
+}
+
+#session-plan-module-home .tabbable-line .card {
+  margin: 20px;
+  /* border: 1px solid white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.12); */
+
+}
+
+#session-plan-module-home .tabbable-line .text-muted .material-icons {
+  font-size: 19px;
+}
+
+#session-plan-module-home .accordion .card-header {
+  text-align: center;
+}
+
+
+#session-plan-module-home .accordion button {
+  /* margin-right: 2px; */
+  flex: auto;
+  color: #737373 !important;
+}
+
+#session-plan-module-home .accordion .card-header button {
+  width: 100%;
+}
+
+#session-plan-module-home .accordion .card-header:hover {
+  border-bottom: 4px solid #4099ff82 !important;
+
+}
+
+#session-plan-module-home .tabbable-line .accordion .card {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#session-plan-module-home .collapse.show {
+  padding-bottom: 30px;
+}
+
+.session-plan-module-session-rec-card {
+    min-width: 200px !important;
+}
+
+.video-clock-size-fa{
+  font-size: initial;
+}
+
+@media (max-width : 768px) {
+  #session-plan-module-home .tabbable-panel {
+    display: none;
+  }
+
+  #session-plan-module-home .accordion {
+    display: block;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width : 768px) {
+  #session-plan-module-home .tabbable-panel {
+    display: block;
+  }
+
+  #session-plan-module-home .accordion {
+    display: none;
+  }
+
+
+}

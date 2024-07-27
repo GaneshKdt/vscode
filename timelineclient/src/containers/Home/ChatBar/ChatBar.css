@@ -1,0 +1,38 @@
+div.chatBar {
+  font-weight: 400 !important;
+  width: 225px;
+  overflow: auto;
+}
+
+.chatBar .imgContainer{
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.chatBar .nameContainer{
+  width: 150px;
+  padding-left : 10px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#chatBarContainer::-webkit-scrollbar {
+  width: 0px;
+}
+  
+/* Track */
+
+#chatBarContainer::-webkit-scrollbar-track {
+  background: #ece9e7; 
+}
+   
+/* Handle */
+#chatBarContainer::-webkit-scrollbar-thumb {
+  background: #c1c1c1; 
+}
+  
+/* Handle on hover */
+#chatBarContainer::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}

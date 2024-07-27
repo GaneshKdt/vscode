@@ -1,0 +1,114 @@
+.card.card-stats-primary {
+  border-left: 3px solid #2196F3; 
+}
+  
+.card.card-stats-success {
+  border-left: 3px solid #66BB6A; 
+}
+
+.card.card-stats-warning {
+  border-left: 3px solid #FFA726; 
+}
+
+.card.card-stats-danger {
+  border-left: 3px solid #F44336; 
+}
+
+#chatBarContainer{
+  border-left: 1px solid rgb(204, 204, 204);
+  overflow: auto
+
+}
+
+.Home-feed{
+  max-width: 500px;
+
+}
+
+@media (max-width: 768px){
+  #content > #home-container {
+      right: 0px;
+      margin-bottom: 75px;
+  }
+
+  #home-control-buttons {
+    display: flex !important;
+    z-index: 1050 !important;
+  }
+  #content #feed{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #content #schedule {
+    display: none;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #home-control-buttons > .navbar-nav {
+    width: 70%;
+    font-size: larger;
+    font-weight: 500;
+    color: black;
+  }
+}
+  
+  @media (max-width: 768px){
+
+  #home-container.Feed #feed {
+    display: block;
+  }
+  #home-container.Feed #schedule {
+    display: none;
+  }
+
+  #home-container.Schedule #feed {
+    display: none;
+  }
+  #home-container.Schedule #schedule {
+    display: block;
+  }
+  
+  a.text-center.text-bold.nav-link {
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+.upcoming-sidebar-container{
+  width:300px
+}
+@media (max-width: 1024px){
+  #sidebar {
+    width: 250px!important;
+  }
+  #content {
+    width: calc(100% - 260px);
+  }
+}
+@media (max-width: 768px){
+  .container-fluid {
+    margin-right: 0px!important;
+  }
+  .sessionCard{
+    margin-left:0px!important;
+    margin-right:0px!important;
+    width: 100%!important;
+  }
+  #feed .card-header{
+    padding: 10px 5px 0px 16px;
+  }
+ 
+}
+
+
+
+@media only screen and (min-width: 1300px) {
+  
+  .timelineSidebar{
+    min-width: 790px;
+  } 
+
+}

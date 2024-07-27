@@ -1,0 +1,48 @@
+
+.breadcrumb > li::before {
+
+    font-family: "Material Icons" !important;
+    content: " " !important;
+    font-size: 17px !important;
+    vertical-align: middle;
+
+    
+    font-weight: normal;
+    font-style: normal;
+    
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.breadcrumb > li + li:before {
+    content: " \e5cc " !important;
+}
+
+.breadcrumb > li{
+    padding: 2px;
+}
+
+
+.breadcrumb .active {
+    background: transparent;
+}
+
+
+.breadcrumb .active {
+    background: transparent;
+    cursor: default;
+}
+
+.breadcrumb {
+    background-color: unset !important;
+    align-items: center;
+}
+
+.breadcrumb {
+    padding-left : 0px;
+}

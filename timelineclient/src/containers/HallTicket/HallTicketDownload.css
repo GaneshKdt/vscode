@@ -1,0 +1,21 @@
+#authentic-photograph{
+    position:absolute;
+    margin-top: 93px;
+    margin-left: -26px;
+        /* Safari */
+    -webkit-transform: rotate(-34deg);
+    
+    /* Firefox */
+    -moz-transform: rotate(-34deg);
+    
+    /* IE */
+    -ms-transform: rotate(-34deg);
+    
+    /* Opera */
+    -o-transform: rotate(-34deg);
+    
+    color: #5c7090;
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    
+    }

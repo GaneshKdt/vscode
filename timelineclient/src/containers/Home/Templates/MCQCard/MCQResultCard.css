@@ -1,0 +1,181 @@
+.mcq-result-card {
+   
+    padding: 4px 12px 12px;
+    cursor: pointer;
+}
+.mcq-result-card-head{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+.mcq-result-card-content-left {
+    padding: 13px 18px 15px 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+   
+    
+}
+.mcq-result-card-content-center {
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 15px 10px 15px 5px;
+    margin: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.mcq-result-card-content-center .title-wrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.mcq-result-card-content-center .subbox-wrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 4px;
+}
+.mcq-result-card-content-center .content-info {
+    line-height: 20px;
+    width: 100%;
+    padding-top: 16px;
+}
+.due-date{
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    line-height: 16px;
+    color: red;
+}
+.due-date .icon {
+    width: 10px;
+    height: 10px;
+    background: url(/static/media/due_clock.f8f98fae.svg) no-repeat;
+    background-size: cover;
+}
+.due-date .text {
+    margin-left: 7px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.mcq-result-card-content-center .center-title {
+    max-height: 48px;
+    line-height: 24px;
+    min-height: 24px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.attend-test {
+    height: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0 10px;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #1a237e;
+    background-color: #e8eaf6;
+    border-color: #e8eaf6; 
+}
+
+.attend-test-disabled {
+    height: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0 10px;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: #9c9c9c;
+    background-color: #d7d8de00;
+    border-color: #d1d2d8b8;
+}
+.attend-test-disabled:hover {
+    color: #9c9c9c;
+}
+.mcq-result-card-content-right {
+    padding: 0 10px;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    line-height: 24px;
+}
+.total-value {
+    color: #666;
+    line-height: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+.progress-wrapper{
+    height: 24px;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.progress-value {
+    color: #333;
+    line-height: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.completed .completed-image {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    color:green
+}

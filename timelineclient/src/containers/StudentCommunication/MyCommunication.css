@@ -1,0 +1,64 @@
+.rowOdd{
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* background: antiquewhite; */
+    border-bottom: 1px solid;
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+.rowEven{
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* background: white; */
+    border-bottom: 1px solid;
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+.header{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    padding: inherit;
+}
+.emailCard{
+    /* max-width: 85%; */
+    margin-right: 5%;
+    padding: 1%;
+    border: black;
+}
+.react-bootstrap-table{
+    text-align: center;
+    vertical-align: middle;
+}
+/* .row{
+    padding: 1%;
+} */
+.react-bootstrap-table-pagination{
+    width: 75% !important;
+    text-align: left;
+}
+.react-bootstrap-table-pagination-total{
+    margin: 10px;
+}
+.emailHeader{
+    font: 'Calibri'
+}
+.layoutButtons{
+    /* margin-left: 67%; */
+    text-align: end;
+}
+.paddingForInnerEmailCard{
+    padding : 3%;
+}
+.headerForInbox{
+    font-size: x-large;
+    margin: 10px;
+}
+
+.marginRightForChatInbox{
+    margin-right: 7%;
+}

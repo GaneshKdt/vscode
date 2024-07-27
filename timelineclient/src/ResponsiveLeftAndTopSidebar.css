@@ -1,0 +1,167 @@
+/* Responsive; view left sidebar when the button on top nav is clicked */
+
+@media( max-width: 992px ) {
+  
+	#sidebar {
+		display: none;
+		margin-top: 0px !important;
+  }
+  
+  #content {
+    width: 100% !important;
+  }
+
+	#sidebar {
+		display: block;
+		background: #ece9e7;
+		min-height: stretch;
+  }
+  
+	#side-bar-parent {
+		overflow: auto;
+		z-index: 1020;
+    position: fixed !important;
+
+    box-shadow: 0px 0px 0px -1px rgba(0,0,0,0.2), 0px 0px 5px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12);
+  }
+
+  #side-bar-parent::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+	.navbar-nav {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		flex-wrap: wrap;
+  }
+  
+	.navbar-nav .dropdown-menu {
+		position: absolute !important;
+  }
+}
+
+/* Responsive styling depending on size */
+@media ( max-width: 992px ){
+
+  #sidebar {
+    padding-bottom: 51px !important;
+  }
+
+  #content .inner-sidebar{
+    padding-bottom: 51px !important;
+  }
+
+  
+	@media( max-width: 576px ) {
+  
+    #top-header {
+      height: 49px !important;
+    }
+    .navBarOpened #top-header {
+      height: 230px !important;
+    }
+
+    #side-bar-parent, #content .inner-sidebar {
+      top: 49px !important;
+      height: calc(100vh - 49px) !important;
+    }
+		.navBarOpened #side-bar-parent, .navBarOpened #content .inner-sidebar {
+			top: 230px !important;
+			height: calc(100vh - 230px) !important;
+    }
+		.navBarOpened #content{
+			top: 230px !important;
+			margin-top: 20px;
+		}
+  }
+  
+	@media( min-width: 576px ) {
+    #top-header {
+      height: 49px !important;
+    }
+    .navBarOpened #top-header {
+      height: 161px !important;
+    }
+    #side-bar-parent, #content .inner-sidebar  {
+      top: 49px !important;
+      height: calc(100vh - 49px) !important;
+    }
+		.navBarOpened #side-bar-parent, .navBarOpened #content .inner-sidebar  {
+			top: 161px !important;
+			height: calc(100vh - 161px) !important;
+    }
+		.navBarOpened #content {
+			top: 161px !important;
+			margin-top: 20px;
+    }
+  }
+  @media ( min-width: 768px ){
+    #top-header {
+      height: 49px !important;
+    }
+    .navBarOpened #top-header {
+      height: 163px !important;
+    }
+    #side-bar-parent, #content .inner-sidebar  {
+      top: 49px !important;
+      height: calc(100vh - 49px) !important;
+    }
+		.navBarOpened #side-bar-parent, .navBarOpened #content .inner-sidebar  {
+			top: 163px !important;
+			height: calc(100vh - 163px) !important;
+    }
+		.navBarOpened #content{
+			top: 163px !important;
+			margin-top: 20px;
+		}
+  }
+}
+
+/* Open/Close animations */
+@media( max-width: 992px ) {
+  body.sideBarOpened #side-bar-parent {
+    display: block;
+    left: 0px;
+    animation-duration: 0.5s;
+    animation-name: slideInFromLeft;
+  }
+
+	body:not(.sideBarOpened) #side-bar-parent {
+    animation-fill-mode: forwards;
+		animation-duration: 0.5s;
+		animation-name: slideOutFromLeft;
+  }
+
+  @keyframes slideOutFromLeft {
+    from {
+      margin-left: 0px;
+    }
+    to {
+      margin-left: -300px;
+      display: none;
+    }
+  }
+  @keyframes slideInFromLeft {
+    from {
+      margin-left: -300px;
+    }
+    to {
+      margin-left: 0px;
+    }
+  }
+}
+
+.navbar-icon-bottom{
+	background-color: #ECE9E7;
+	border-top: 1px solid #CCCCCC;
+}
+
+#content{
+  min-height: auto;
+}
+
+body:not(.hideHeader) #content #start-IA-container .iFrameContainer{
+  max-height: calc(100vh - 100px) !important;
+}

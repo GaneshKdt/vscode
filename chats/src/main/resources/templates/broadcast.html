@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+<meta charset="ISO-8859-1">
+<title>Broadcast Message</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+</head>
+
+<style type="text/css">
+table {
+  counter-reset: section;
+}
+
+.count:before {
+  counter-increment: section;
+  content: counter(section);
+}  
+
+.select_multiple input {
+	height: unset !important;
+	width: unset !important;
+}
+/* For material-icon align with text */
+.material-icons {
+	display: inline-flex;
+	vertical-align: top;
+}
+
+.action_menu_btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.action_menu {
+	z-index: 1;
+	position: absolute;
+	padding: 15px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 15px;
+	top: 30px;
+	right: 15px;
+	display: none;
+}
+
+.action_menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+}
+
+.action_menu ul li {
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+	padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.trigger {
+	position: relative;
+    position: relative;
+    margin: 3px 5px 3px 0; 
+    padding: 3px 20px 3px 5px;
+    border: 1px solid #e8e0e0;
+    font-size: 13px;
+    max-width: 100%;
+    border-radius: 3px;
+    background-color: #f9f9f9;  
+}  
+
+.preloader {
+    display: block;
+    margin: 70px;
+    width: 50px;
+	height: 50px;   
+    -webkit-animation: rotate 0.8s infinite linear !important;
+    -moz-animation: rotate 0.8s infinite linear !important;
+    animation: rotate 0.8s infinite linear !important;
+    border:  5px solid #007bff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    position:relative;
+}
+
+@-webkit-keyframes rotate {
+    0%    { transform: rotate(0deg); }
+    100%  { transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+    0%    { transform: rotate(0deg); }
+    100%  { transform: rotate(360deg); }
+}
+@keyframes rotate {
+    0%    { transform: rotate(0deg); }
+    100%  { transform: rotate(360deg); }
+}
+
+tr:hover {
+	background-color: #EAEAEA;
+}
+
+btn{
+	border-radius: 4px; 
+	margin-top:5px;
+}
+</style>
+
+<body style='margin: auto;'>
+
+	<div th:class="form-group">
+		<select class="form-control" th:field="*{chatbean}" >
+			<option value="0" selected="selected">Select Chat Group</option>
+		    <option th:each="group : ${chatGroupList}" th:value="${group.groupId}" 
+		    	th:text="${group.chatGroupName}" ></option>
+		</select>
+	</div>
+	
+</body>
+</html>

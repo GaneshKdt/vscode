@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color : #ece9e7;
+}
+
+button:focus {
+  outline: unset;
+}
+
+a.MuiButtonBase-root:hover {
+  color: inherit;
+}
+
+
+#exam-booking-flow .selected-row {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+#exam-booking-flow .selected-provider {
+  border: 1px solid transparent;
+  margin: 3px;
+  font-weight: bold;
+  
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+
+#exam-booking-flow .active {
+  background: inherit;
+  font-weight: bold;
+}
+
+#exam-booking-flow .breadcrumb-item.disabled a {
+  pointer-events: none;
+  cursor: default;
+  color: #6c757d;
+}
+
+.payment-provider:hover{
+  box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+  cursor: pointer;
+}
+#exam-booking-flow .react-bootstrap-table table {
+  table-layout: auto;
+}
+
+
+#exam-booking-flow table .not-selectable-row {
+  background-color :#f5c6cb;
+}
+
+#exam-booking-flow table .selected-row {
+  background-color :#c3e6cb;
+}

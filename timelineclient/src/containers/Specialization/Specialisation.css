@@ -1,0 +1,77 @@
+.list-group-item.disabled.list-group-item-action {
+    background-color: #dddddd;
+}
+
+.fs-16{
+    font-size: 16px;
+}
+
+.list-group-item.disabled.list-group-item-action.term3Subjects{
+   background-color:#1b5e20;
+   color: white;
+}
+
+.list-group-item.active.list-group-item-action.isAutoSelected{
+    background-color:#009688;
+    color: white;
+}
+
+.list-group-item.disabled.list-group-item-action.prerequisite{
+    background-color:#F08080;
+    color: white;
+ }
+
+ .list-group-item.disabled.list-group-item-action.coreSubject{
+    background-color:#3544e6;
+    color: white;
+ }
+
+ .list-group-item.disabled.list-group-item-action.nextSemCoreSubject{
+    background-color:#ffd49b;
+    color: black;
+ }
+ 
+ .list-group-item.disabled.list-group-item-action.preselected{
+    background-color: #009688;
+    color: white;
+ }
+
+span.color-indicator {
+    width: 25px;
+    height: 16px;
+    /* border: 1px solid; */
+    display: inline-block;
+}
+
+.color-a{
+    background-color: #1b5e20;
+}
+
+.color-b{
+    background-color: #dddddd;
+}
+
+.color-c{
+    background-color: #009688;
+}
+
+.color-d{
+    border: 1px solid;
+    background-color: none;
+}
+
+.coreSubject{
+    background-color: #3544e6;
+}
+
+.nextSemCoreSubject{
+    background-color: #ffd49b;
+}
+
+.prerequisite{
+    background-color: #F08080;
+}
+
+.preselected{
+    background-color: #24d6c5;
+}
